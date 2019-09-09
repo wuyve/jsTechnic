@@ -135,7 +135,7 @@ console.profile();
 console.profileEnd();
 // 浏览器遇到profileEnd()时，就会将统计结果生成报表显示出来，或者在浏览器中使用profile的record特性查看。
 
-查看程序执行时间（显示在控制台上）
+// 查看程序执行时间（显示在控制台上）
 console.time('times');
 //代码片段
 console.timeEnd('timeEnd')
