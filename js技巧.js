@@ -111,3 +111,31 @@ if ((mobileReg.test(window.navigator.userAgent.toLocaleLowerCase()))) {
 } else {
     alert('非移动设备！')
 }
+
+// 25.常用的控制台函数
+console.log('我是一个日志')
+console.warn('一个警告')
+console.error('一个错误')
+
+try {
+    // 或许会报错的代码块
+} catch(e) {
+    console.error('错误', e);
+}
+// 堆栈函数console.trace(),可以查看指定函数的调用关系
+// clear()函数，用来清除控制台的log
+// dir()函数，输出对象中的所有属性，如dir({test: 1,test2: 2})
+// values()函数,以数组的形式打印出对象中的所有属性值
+// keys()与values()是一对，会以数组方式打印对象中的所有键
+
+// 26.性能检测
+console.profile();
+// 要统计的代码
+// ...
+console.profileEnd();
+// 浏览器遇到profileEnd()时，就会将统计结果生成报表显示出来，或者在浏览器中使用profile的record特性查看。
+
+查看程序执行时间（显示在控制台上）
+console.time('times');
+//代码片段
+console.timeEnd('timeEnd')
